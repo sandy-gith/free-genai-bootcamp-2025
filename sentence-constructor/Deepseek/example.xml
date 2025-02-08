@@ -1,0 +1,118 @@
+## Example when student provides a sentence in english
+<example>
+    <user:input>
+        Did you see the raven this morning? They were looking at our garden.
+    </user:input>
+    <score>4</score>
+    <score_reasons>
+    - BAD: in the vocabulary table it did not show the korean characters, the cells are just blank
+    - BAD: the beginner sentence is uncessary, should jsut start showing the vocabulary table
+    - BAD: In the clues we should not provide the polite form of verbs, because the student needs to figure that out.
+    - BAD: The sentence structure says too much we really want something that is conceptual like this: [Location] [Subject] [Verb], [Object] [Verb]?
+    </score_reasons>
+    <assistant:output>
+        Let's break down the sentence into smaller parts. Here's a possible table of vocabulary to get you started:
+
+        | Korean        | Romanised | English       |
+            |---------------|-----------|---------------|
+            |              | kkamagwi  | raven         |
+            |              | boda      | to see        |
+            |              | achim     | morning       |
+            |              | geudeul    | they          |
+            |              | boda      | to look at    |
+            |              | jeongwon  | garden        |
+            |              | uri       | our           |
+
+        Now, let's think about the sentence structure. We have two clauses: "Did you see the raven this morning? They were looking at our garden.".
+        
+        Here's a possible sentence structure:
+
+        1.[Time] [Subject] [Object] [Verb]?  
+    - Example: [이 아침에] [당신] [가마우지를] [보셨]吗?
+
+        2. [Subject] [Verb (past continuous)] [Location].  
+    - Example: [그들] [는] [우리庭院을] [看着] 있었다.
+
+        Your turn! Can you try to fill in the blanks using the vocabulary and sentence structure provided?
+    </assistant:output>
+</example>
+
+<example>
+    <user:input>
+            Bears are at the door, did you leave the garbage out?
+    </user:input>
+    <score>10</score>
+    <score_reasons>
+        - GOOD: Doesn't provide verbose text at the start, and shows vocabulary immediatly
+        - GOOD: Shows conceptual sentence strucutre
+        - GOOD: Clues don't give away any of the tense of conjugations
+    </score_reasons>
+    <assistant:output>
+        Vocabulary Table
+
+        | Korean        | Romanised | English       |
+        |---------------|-----------|---------------|
+        | 곰            | gom       | bear         |
+        | 문            | mun       | door         |
+        | 때리다        | ttaerida  | to leave      |
+        | 쓰레기        | sseuregi  | garbage       |
+        | 내다          | naeda     | to throw away |
+        | 보다          | boda      | to see        |
+
+        Sentence Structure
+
+        [Location] [Subject] [Verb], [Subject] [Object] [Verb]?
+
+        Considerations
+
+        * The sentence contains a statement and a question connected by a comma.
+        * The first part describes a current situation.
+        * The second part asks about a past action.
+        * The student needs to figure out the correct particles and verb conjugations for the sentence.
+
+        Possible Next Steps
+
+        * Attempt to translate the sentence using the vocabulary and structure provided.
+        * Ask for clues about:
+        * Using particles for location and subject.
+        * Verb conjugation for past and present tense.
+        * Structuring compound sentences in Korean.
+        * Forming questions in Korean.
+    </assistant:output>
+</example>
+
+
+## Example - interpretation when the Student attempts the sentence.
+<example>
+<user:input>문 곰있다, 당신 쓰레기 놓다밖?</user:input>
+<score>10<score>
+<score-reasons>
+    - GOOD: The exact input provided by the user is interpreted and explained
+    - GOOD: Providing proper feedback on the users attempt.
+    - GOOD: comparing actual Korean way of saying the sentence with the user's attempt and suggesting considerations
+    - GOOD: Provides proper feedback why the user's attempt is correct or why the user's attempt is wrong/ slightly different
+</score-reasons>
+<assistant:output>
+    Here's how your attempt can be interpreted:
+
+    "문 곰있다" can be translated to "The door is a bear" or "There is a bear at the door" ( closer to the original meaning). However, a more natural way to express this in Korean would be "곰이 문 앞에 있다" (A bear is in front of the door).
+
+    "당신 쓰레기 놓다밖" can be translated to "You put the garbage outside" ( closer to the original meaning, but it's missing a crucial question particle). A more natural way to express this in Korean would be "당신이 쓰레기를 밖에 놓았어?" (Did you leave the garbage outside?) or "쓰레기를 밖에 놓았니?" (Did you leave the garbage outside? - more polite).
+
+    Considerations
+
+    - You used the correct vocabulary for the most part, but the sentence structure and particle usage need improvement.
+    - In the first part, you didn't use the correct particle to indicate the location of the bear.
+    - In the second part, you didn't use the correct question particle to form a question.
+    - The verb conjugation for the second part is also incorrect.
+
+    Possible Next Steps
+
+    - Review the vocabulary table and try to use the correct particles and verb conjugations.
+    - Practice forming questions in Korean using the correct question particles.
+    - Ask for clues about:
+    - Using particles for location and subject.
+    - Verb conjugation for past and present tense.
+    - Structuring compound sentences in Korean.
+</assistant:output>
+</example>
